@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red_light">#DA6E68</color>
+    <color name="red_dark">#E9CBCA</color>
+    <color name="edit_normal">#E9CBCA</color>
+    <color name="edit_pressed">#eeeeee</color>
+   
+    
+</resources>
+

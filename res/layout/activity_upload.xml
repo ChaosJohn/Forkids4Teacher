@@ -1,0 +1,173 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#DA6E68"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:src="@drawable/back_btn_selector_grey" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:text="上传照片"
+            android:textColor="#E9CBCA"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/send_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/edit_background_selector"
+            android:gravity="center"
+            android:text="上 传"
+            android:textColor="#DA6E68"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:background="#ECE1E1"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/upload_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="说点什么吧。。。"
+                android:inputType="textMultiLine"
+                android:textColor="#ABA1A1"
+                android:textSize="20sp" />
+
+<!--             <LinearLayout -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="0dp" -->
+<!--                 android:layout_weight="1.8" -->
+<!--                 android:orientation="horizontal" > -->
+
+<!--                 <ImageView -->
+<!--                     android:layout_width="0dp" -->
+<!--                     android:layout_height="match_parent" -->
+<!--                     android:layout_weight="1.8" -->
+<!--                     android:background="@drawable/moment_to" /> -->
+
+<!--                 <ImageView -->
+<!--                     android:layout_width="0dp" -->
+<!--                     android:layout_height="match_parent" -->
+<!--                     android:layout_weight="1.8" -->
+<!--                     android:background="@drawable/moment_expression" /> -->
+
+<!--                 <TextView -->
+<!--                     android:layout_width="0dp" -->
+<!--                     android:layout_height="match_parent" -->
+<!--                     android:layout_weight="7" /> -->
+<!--             </LinearLayout> -->
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="#ECE1E1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:text="上传到"
+                android:textColor="#ABA1A1"
+                android:textSize="20sp" />
+
+            <LinearLayout 
+                android:id="@+id/group_spinner"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="6">
+            <TextView
+                android:id="@+id/group_value"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+                android:text="去年今日"
+                android:textColor="#ABA1A1"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:src="@drawable/arrow_down"
+                />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5" />
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:background="#ECE1E1"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp" >
+
+            <GridView
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnWidth="100dp"
+                android:numColumns="3"
+                android:verticalSpacing="10dp"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

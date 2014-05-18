@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/attendance_listview_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:padding="4dp" >
+
+        <ImageView
+            android:id="@+id/attendance_listview_item_kid_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/avatar_kid" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="13"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/attendance_listview_item_kid_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="张三丰 同学"
+            android:textColor="#353333"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/attendance_listview_item_kid_phone"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="13304518746"
+            android:textColor="#353333"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/call_btn"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/call_btn_selector" />
+        
+        <!-- <CheckBox -->
+        <!-- android:id="@+id/check_btn" -->
+        <!-- android:layout_width="0dip" -->
+        <!-- android:layout_weight="1" -->
+        <!-- android:checked="false" -->
+        <!-- android:layout_height="wrap_content"/> -->
+
+    </LinearLayout>
+
+</LinearLayout>

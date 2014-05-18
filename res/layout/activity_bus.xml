@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical"
+    android:paddingBottom="4dp"
+    tools:context=".Attendance" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="#DA6E68"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:src="@drawable/back_btn_selector_grey" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="13"
+            android:gravity="center"
+            android:text="校车通知"
+            android:textColor="#EEEEEE"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="10" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="8"
+        android:orientation="vertical" >
+
+        <!-- <LinearLayout -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="0dip" -->
+        <!-- android:layout_weight="1.2" -->
+        <!-- android:gravity="center_vertical" -->
+        <!-- android:orientation="horizontal" > -->
+
+
+        <!-- <LinearLayout -->
+        <!-- android:layout_width="0dip" -->
+        <!-- android:layout_height="match_parent" -->
+        <!-- android:layout_weight="2" > -->
+        <!-- </LinearLayout> -->
+
+
+        <!-- <Button -->
+        <!-- android:id="@+id/change_list_btn" -->
+        <!-- android:layout_width="0dip" -->
+        <!-- android:layout_height="match_parent" -->
+        <!-- android:layout_weight="1" -->
+        <!-- android:background="@drawable/round_corner_btn" -->
+        <!-- android:gravity="center" -->
+        <!-- android:text="已点名" -->
+        <!-- android:textColor="#FFFFFF" -->
+        <!-- android:textSize="18sp" /> -->
+        <!-- </LinearLayout> -->
+
+
+        <!-- <ListView -->
+
+        <com.huaijv.forkids4teacher.viewElems.SlideCutListView
+            android:id="@+id/bus_listview"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="13" >
+        </com.huaijv.forkids4teacher.viewElems.SlideCutListView>
+        <!-- </ListView> -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/sent_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_corner_btn_background_selector"
+                android:gravity="center"
+                android:text="发送"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/confirm_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_corner_btn_background_selector"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/select_all_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_corner_btn_background_selector"
+                android:gravity="center"
+                android:text="全选"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

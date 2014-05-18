@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.huaijv.forkids4teacher"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name="com.huaijv.forkids4teacher.view.GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="Forkids4Teacher"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.huaijv.forkids4teacher.view.Login"
+            android:label="@string/title_activity_attendance"
+            android:icon="@drawable/ic_launcher"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.huaijv.forkids4teacher.view.Welcome"
+            android:label="家园宝_老师版"
+            android:icon="@drawable/ic_launcher"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.huaijv.forkids4teacher.view.Homepage"
+            android:label="Forkids4Teacher"
+            android:icon="@drawable/ic_launcher"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.huaijv.forkids4teacher.view.Attendance"
+            android:label="@string/title_activity_attendance"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.huaijv.forkids4teacher.view.Bus"
+            android:label="@string/title_activity_bus"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.huaijv.forkids4teacher.view.Journal"
+            android:label="@string/title_activity_bus"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.huaijv.forkids4teacher.view.JournalDetail"
+            android:label="@string/title_activity_bus"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.huaijv.forkids4teacher.view.JournalEdit"
+            android:label="@string/title_activity_bus"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.huaijv.forkids4teacher.view.JournalChanges"
+            android:label="@string/title_activity_bus"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.huaijv.forkids4teacher.view.Tips"
+            android:label="@string/title_activity_bus"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.huaijv.forkids4teacher.view.TipsEdit"
+            android:label="@string/title_activity_bus"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.huaijv.forkids4teacher.view.TipsDetail"
+            android:label="@string/title_activity_bus"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.huaijv.forkids4teacher.view.TipsInput"
+            android:label="@string/title_activity_bus"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.huaijv.forkids4teacher.view.Upload"
+            android:label="@string/title_activity_bus"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.huaijv.forkids4teacher.view.Messages"
+            android:label="@string/title_activity_messages"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+    </application>
+
+</manifest>
